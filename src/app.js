@@ -10,13 +10,17 @@ const app = new App({
     {
       path: "/",
       method: ["GET"],
-      handler: (req, res) => {
+      handler: (_req, res) => {
         res.writeHead(200);
         res.end("<h1>Easy Hours Bot is working!</h1>");
       },
     },
   ],
 });
+
+// Si tenemos un objeto como DB
+// TODO: Cambiar a redis
+let DB = {};
 
 app.message(":robot_face:", async ({ message, say }) => {
   await say(`Beep Boop!: <@${message.user}>`);
@@ -28,11 +32,21 @@ app.event("reaction_added", async ({ event }) => {
       (element) => element === event.reaction
     )
   ) {
+    // Si se quiere enviar un valor a el mismo
     if (event.user === event.item_user) { return; }
-    let srcUser = await app.client.users.info({ user: event.user });
-    let dstUser = await app.client.users.info({ user: event.item_user });
-    value = event.reaction.slice(4);
+    // Creamos la key de la DB
+    // {targetId, fecha}
+    const DBKey = event.user + event.item.channel;
+    if (DB[DBKey]?.targetID === event.item_user && (Date.now() - DB[DBKey]?.fecha) < 10000) { return; }
+    // Lockear el envio del usuario
+    DB[DBKey] = {
+      targetID: event.item_user,
+      fecha: Date.now(),
+    };
     try {
+      let srcUser = await app.client.users.info({ user: event.user });
+      let dstUser = await app.client.users.info({ user: event.item_user });
+      value = event.reaction.slice(4);
       const _res = await axios.post(
         `${process.env.VALUE_URL}/delivered`,
         {
@@ -62,6 +76,8 @@ app.event("reaction_added", async ({ event }) => {
       console.error(
         `No se pudo enviar el valor ${value} de ${srcUser.user.profile.email} a ${dstUser.user.profile.email}`
       );
+      // Se limpia la key de la DB
+      DB[DBKey] = null;
     }
   }
   return;
