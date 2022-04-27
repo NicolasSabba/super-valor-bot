@@ -28,11 +28,12 @@ app.event("reaction_added", async ({ event }) => {
       (element) => element === event.reaction
     )
   ) {
+    if (event.user === event.item_user) { return; }
     let srcUser = await app.client.users.info({ user: event.user });
     let dstUser = await app.client.users.info({ user: event.item_user });
     value = event.reaction.slice(4);
     try {
-      const res = await axios.post(
+      const _res = await axios.post(
         `${process.env.VALUE_URL}/delivered`,
         {
           value,
@@ -48,10 +49,14 @@ app.event("reaction_added", async ({ event }) => {
           },
         }
       );
-      console.log(res.data);
       console.log(
         `${srcUser.user.profile.email} le envió un valor de ${value} a ${dstUser.user.profile.email}`
       );
+      const _result = await app.client.chat.postEphemeral({
+        channel: event.item.channel,
+        user: srcUser.user.id,
+        text: `${value.toUpperCase()} value for ${dstUser.user.profile.real_name_normalized} sent successfully!`
+      });
     } catch (err) {
       console.error(err);
       console.error(
