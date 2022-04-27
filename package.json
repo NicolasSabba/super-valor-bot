@@ -4,6 +4,7 @@
   "description": "El mejor bot de api de valores",
   "main": "src/app.js",
   "scripts": {
+    "live": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
