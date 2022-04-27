@@ -19,3 +19,11 @@ const app = new App({
   ],
 });
 
+app.message(':robot_face:', async ({ message, say }) => {
+  await say(`Beep Boop!: <@${message.user}>`);
+});
+
+(async () => {
+  await app.start(process.env.PORT ? Number.parseInt(process.env.PORT, 10) : 3000);
+  console.log(`‚ö°Ô∏è Bolt app is running in port ${Number.parseInt(process.env.PORT)}!`);
+})();
