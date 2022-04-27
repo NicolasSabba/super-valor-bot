@@ -36,19 +36,27 @@ app.event("reaction_added", async ({ event }) => {
         `${process.env.VALUE_URL}/delivered`,
         {
           value,
-          to: [
-            dstUser.user.profile.email,
-          ],
+          to: [dstUser.user.profile.email],
           type: "value",
           from: srcUser.user.profile.email,
           actions: `${value} (from Easy value)`,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: process.env.VALUE_AUTH,
+          },
         }
       );
       console.log(res.data);
-      console.log(`${srcUser.user.profile.email} le envió un valor de ${value} a ${dstUser.user.profile.email}`);
+      console.log(
+        `${srcUser.user.profile.email} le envió un valor de ${value} a ${dstUser.user.profile.email}`
+      );
     } catch (err) {
       console.error(err);
-      console.error(`No se pudo enviar el valor ${value} de ${srcUser.user.profile.email} a ${dstUser.user.profile.email}`);
+      console.error(
+        `No se pudo enviar el valor ${value} de ${srcUser.user.profile.email} a ${dstUser.user.profile.email}`
+      );
     }
   }
   return;

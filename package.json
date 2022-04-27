@@ -1,6 +1,6 @@
 {
   "name": "super-valor-bot",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "El mejor bot de api de valores",
   "main": "src/app.js",
   "scripts": {
