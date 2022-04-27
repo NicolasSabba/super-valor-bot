@@ -7,17 +7,21 @@
         type: 'reaction_added',
         user: 'URYJPDP97',
         reaction: 'ico-participation',
-        item: [Object],
+        item: [Object
+      ],
         item_user: 'U56SH2022',
         event_ts: '1651068826.002500'
-      },
+    },
       type: 'event_callback',
       event_id: 'Ev03D5PK27J6',
       event_time: 1651068826,
-      authorizations: [ [Object] ],
+      authorizations: [
+      [Object
+      ]
+    ],
       is_ext_shared_channel: false,
       event_context: '4-eyJldCI6InJlYWN0aW9uX2FkZGVkIiwidGlkIjoiVDBZVFdTMVNRIiwiYWlkIjoiQTAzQ1lLS0I4MkoiLCJjaWQiOiJDMDNESjUzREQ2RCJ9'
-    },
+  },
     payload: {
       type: 'reaction_added',
       user: 'URYJPDP97',
@@ -26,10 +30,10 @@
         type: 'message',
         channel: 'C03DJ53DD6D',
         ts: '1651067912.929229'
-      },
+    },
       item_user: 'U56SH2022',
       event_ts: '1651068826.002500'
-    },
+  },
     event: {
       type: 'reaction_added',
       user: 'URYJPDP97',
@@ -38,11 +42,12 @@
         type: 'message',
         channel: 'C03DJ53DD6D',
         ts: '1651067912.929229'
-      },
+    },
       item_user: 'U56SH2022',
       event_ts: '1651068826.002500'
-    },
-    say: [Function (anonymous)],
+  },
+    say: [Function (anonymous)
+  ],
     context: {
       isEnterpriseInstall: false,
       botToken: 'xoxb-32948885908-3447548248163-0ZvF4J3cgJxZd50yFPOnqwLW',
@@ -51,279 +56,470 @@
       teamId: 'T0YTWS1SQ',
       retryNum: undefined,
       retryReason: undefined,
-      updateConversation: [Function (anonymous)]
-    },
+      updateConversation: [Function (anonymous)
+    ]
+  },
     client: WebClient {
-      _events: Events <[Object: null prototype] {}> {},
+      _events: Events <[Object: null prototype
+    ] {}> {},
       _eventsCount: 0,
       admin: {
-        apps: [Object],
-        auth: [Object],
-        barriers: [Object],
-        conversations: [Object],
-        emoji: [Object],
-        inviteRequests: [Object],
-        teams: [Object],
-        usergroups: [Object],
-        users: [Object]
-      },
-      api: { test: [Function: bound apiCall] AsyncFunction },
+        apps: [Object
+      ],
+        auth: [Object
+      ],
+        barriers: [Object
+      ],
+        conversations: [Object
+      ],
+        emoji: [Object
+      ],
+        inviteRequests: [Object
+      ],
+        teams: [Object
+      ],
+        usergroups: [Object
+      ],
+        users: [Object
+      ]
+    },
+      api: { test: [Function: bound apiCall
+      ] AsyncFunction
+    },
       apps: {
-        connections: [Object],
-        event: [Object],
-        uninstall: [Function: bound apiCall] AsyncFunction
-      },
+        connections: [Object
+      ],
+        event: [Object
+      ],
+        uninstall: [Function: bound apiCall
+      ] AsyncFunction
+    },
       auth: {
-        revoke: [Function: bound apiCall] AsyncFunction,
-        teams: [Object],
-        test: [Function: bound apiCall] AsyncFunction
-      },
-      bots: { info: [Function: bound apiCall] AsyncFunction },
+        revoke: [Function: bound apiCall
+      ] AsyncFunction,
+        teams: [Object
+      ],
+        test: [Function: bound apiCall
+      ] AsyncFunction
+    },
+      bots: { info: [Function: bound apiCall
+      ] AsyncFunction
+    },
       bookmarks: {
-        add: [Function: bound apiCall] AsyncFunction,
-        edit: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        remove: [Function: bound apiCall] AsyncFunction
-      },
+        add: [Function: bound apiCall
+      ] AsyncFunction,
+        edit: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        remove: [Function: bound apiCall
+      ] AsyncFunction
+    },
       calls: {
-        add: [Function: bound apiCall] AsyncFunction,
-        end: [Function: bound apiCall] AsyncFunction,
-        info: [Function: bound apiCall] AsyncFunction,
-        update: [Function: bound apiCall] AsyncFunction,
-        participants: [Object]
-      },
+        add: [Function: bound apiCall
+      ] AsyncFunction,
+        end: [Function: bound apiCall
+      ] AsyncFunction,
+        info: [Function: bound apiCall
+      ] AsyncFunction,
+        update: [Function: bound apiCall
+      ] AsyncFunction,
+        participants: [Object
+      ]
+    },
       chat: {
-        delete: [Function: bound apiCall] AsyncFunction,
-        deleteScheduledMessage: [Function: bound apiCall] AsyncFunction,
-        getPermalink: [Function: bound apiCall] AsyncFunction,
-        meMessage: [Function: bound apiCall] AsyncFunction,
-        postEphemeral: [Function: bound apiCall] AsyncFunction,
-        postMessage: [Function: bound apiCall] AsyncFunction,
-        scheduleMessage: [Function: bound apiCall] AsyncFunction,
-        scheduledMessages: [Object],
-        unfurl: [Function: bound apiCall] AsyncFunction,
-        update: [Function: bound apiCall] AsyncFunction
-      },
+        delete: [Function: bound apiCall
+      ] AsyncFunction,
+        deleteScheduledMessage: [Function: bound apiCall
+      ] AsyncFunction,
+        getPermalink: [Function: bound apiCall
+      ] AsyncFunction,
+        meMessage: [Function: bound apiCall
+      ] AsyncFunction,
+        postEphemeral: [Function: bound apiCall
+      ] AsyncFunction,
+        postMessage: [Function: bound apiCall
+      ] AsyncFunction,
+        scheduleMessage: [Function: bound apiCall
+      ] AsyncFunction,
+        scheduledMessages: [Object
+      ],
+        unfurl: [Function: bound apiCall
+      ] AsyncFunction,
+        update: [Function: bound apiCall
+      ] AsyncFunction
+    },
       conversations: {
-        acceptSharedInvite: [Function: bound apiCall] AsyncFunction,
-        approveSharedInvite: [Function: bound apiCall] AsyncFunction,
-        archive: [Function: bound apiCall] AsyncFunction,
-        close: [Function: bound apiCall] AsyncFunction,
-        create: [Function: bound apiCall] AsyncFunction,
-        declineSharedInvite: [Function: bound apiCall] AsyncFunction,
-        history: [Function: bound apiCall] AsyncFunction,
-        info: [Function: bound apiCall] AsyncFunction,
-        invite: [Function: bound apiCall] AsyncFunction,
-        inviteShared: [Function: bound apiCall] AsyncFunction,
-        join: [Function: bound apiCall] AsyncFunction,
-        kick: [Function: bound apiCall] AsyncFunction,
-        leave: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        listConnectInvites: [Function: bound apiCall] AsyncFunction,
-        mark: [Function: bound apiCall] AsyncFunction,
-        members: [Function: bound apiCall] AsyncFunction,
-        open: [Function: bound apiCall] AsyncFunction,
-        rename: [Function: bound apiCall] AsyncFunction,
-        replies: [Function: bound apiCall] AsyncFunction,
-        setPurpose: [Function: bound apiCall] AsyncFunction,
-        setTopic: [Function: bound apiCall] AsyncFunction,
-        unarchive: [Function: bound apiCall] AsyncFunction
-      },
-      dialog: { open: [Function: bound apiCall] AsyncFunction },
+        acceptSharedInvite: [Function: bound apiCall
+      ] AsyncFunction,
+        approveSharedInvite: [Function: bound apiCall
+      ] AsyncFunction,
+        archive: [Function: bound apiCall
+      ] AsyncFunction,
+        close: [Function: bound apiCall
+      ] AsyncFunction,
+        create: [Function: bound apiCall
+      ] AsyncFunction,
+        declineSharedInvite: [Function: bound apiCall
+      ] AsyncFunction,
+        history: [Function: bound apiCall
+      ] AsyncFunction,
+        info: [Function: bound apiCall
+      ] AsyncFunction,
+        invite: [Function: bound apiCall
+      ] AsyncFunction,
+        inviteShared: [Function: bound apiCall
+      ] AsyncFunction,
+        join: [Function: bound apiCall
+      ] AsyncFunction,
+        kick: [Function: bound apiCall
+      ] AsyncFunction,
+        leave: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        listConnectInvites: [Function: bound apiCall
+      ] AsyncFunction,
+        mark: [Function: bound apiCall
+      ] AsyncFunction,
+        members: [Function: bound apiCall
+      ] AsyncFunction,
+        open: [Function: bound apiCall
+      ] AsyncFunction,
+        rename: [Function: bound apiCall
+      ] AsyncFunction,
+        replies: [Function: bound apiCall
+      ] AsyncFunction,
+        setPurpose: [Function: bound apiCall
+      ] AsyncFunction,
+        setTopic: [Function: bound apiCall
+      ] AsyncFunction,
+        unarchive: [Function: bound apiCall
+      ] AsyncFunction
+    },
+      dialog: { open: [Function: bound apiCall
+      ] AsyncFunction
+    },
       dnd: {
-        endDnd: [Function: bound apiCall] AsyncFunction,
-        endSnooze: [Function: bound apiCall] AsyncFunction,
-        info: [Function: bound apiCall] AsyncFunction,
-        setSnooze: [Function: bound apiCall] AsyncFunction,
-        teamInfo: [Function: bound apiCall] AsyncFunction
-      },
-      emoji: { list: [Function: bound apiCall] AsyncFunction },
+        endDnd: [Function: bound apiCall
+      ] AsyncFunction,
+        endSnooze: [Function: bound apiCall
+      ] AsyncFunction,
+        info: [Function: bound apiCall
+      ] AsyncFunction,
+        setSnooze: [Function: bound apiCall
+      ] AsyncFunction,
+        teamInfo: [Function: bound apiCall
+      ] AsyncFunction
+    },
+      emoji: { list: [Function: bound apiCall
+      ] AsyncFunction
+    },
       files: {
-        delete: [Function: bound apiCall] AsyncFunction,
-        info: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        revokePublicURL: [Function: bound apiCall] AsyncFunction,
-        sharedPublicURL: [Function: bound apiCall] AsyncFunction,
-        upload: [Function: bound apiCall] AsyncFunction,
-        comments: [Object],
-        remote: [Object]
-      },
-      migration: { exchange: [Function: bound apiCall] AsyncFunction },
-      oauth: { access: [Function: bound apiCall] AsyncFunction, v2: [Object] },
-      openid: { connect: [Object] },
+        delete: [Function: bound apiCall
+      ] AsyncFunction,
+        info: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        revokePublicURL: [Function: bound apiCall
+      ] AsyncFunction,
+        sharedPublicURL: [Function: bound apiCall
+      ] AsyncFunction,
+        upload: [Function: bound apiCall
+      ] AsyncFunction,
+        comments: [Object
+      ],
+        remote: [Object
+      ]
+    },
+      migration: { exchange: [Function: bound apiCall
+      ] AsyncFunction
+    },
+      oauth: { access: [Function: bound apiCall
+      ] AsyncFunction, v2: [Object
+      ]
+    },
+      openid: { connect: [Object
+      ]
+    },
       pins: {
-        add: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        remove: [Function: bound apiCall] AsyncFunction
-      },
+        add: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        remove: [Function: bound apiCall
+      ] AsyncFunction
+    },
       reactions: {
-        add: [Function: bound apiCall] AsyncFunction,
-        get: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        remove: [Function: bound apiCall] AsyncFunction
-      },
+        add: [Function: bound apiCall
+      ] AsyncFunction,
+        get: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        remove: [Function: bound apiCall
+      ] AsyncFunction
+    },
       reminders: {
-        add: [Function: bound apiCall] AsyncFunction,
-        complete: [Function: bound apiCall] AsyncFunction,
-        delete: [Function: bound apiCall] AsyncFunction,
-        info: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction
-      },
+        add: [Function: bound apiCall
+      ] AsyncFunction,
+        complete: [Function: bound apiCall
+      ] AsyncFunction,
+        delete: [Function: bound apiCall
+      ] AsyncFunction,
+        info: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction
+    },
       rtm: {
-        connect: [Function: bound apiCall] AsyncFunction,
-        start: [Function: bound apiCall] AsyncFunction
-      },
+        connect: [Function: bound apiCall
+      ] AsyncFunction,
+        start: [Function: bound apiCall
+      ] AsyncFunction
+    },
       search: {
-        all: [Function: bound apiCall] AsyncFunction,
-        files: [Function: bound apiCall] AsyncFunction,
-        messages: [Function: bound apiCall] AsyncFunction
-      },
+        all: [Function: bound apiCall
+      ] AsyncFunction,
+        files: [Function: bound apiCall
+      ] AsyncFunction,
+        messages: [Function: bound apiCall
+      ] AsyncFunction
+    },
       stars: {
-        add: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        remove: [Function: bound apiCall] AsyncFunction
-      },
+        add: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        remove: [Function: bound apiCall
+      ] AsyncFunction
+    },
       team: {
-        accessLogs: [Function: bound apiCall] AsyncFunction,
-        billableInfo: [Function: bound apiCall] AsyncFunction,
-        billing: [Object],
-        info: [Function: bound apiCall] AsyncFunction,
-        integrationLogs: [Function: bound apiCall] AsyncFunction,
-        preferences: [Object],
-        profile: [Object]
-      },
+        accessLogs: [Function: bound apiCall
+      ] AsyncFunction,
+        billableInfo: [Function: bound apiCall
+      ] AsyncFunction,
+        billing: [Object
+      ],
+        info: [Function: bound apiCall
+      ] AsyncFunction,
+        integrationLogs: [Function: bound apiCall
+      ] AsyncFunction,
+        preferences: [Object
+      ],
+        profile: [Object
+      ]
+    },
       usergroups: {
-        create: [Function: bound apiCall] AsyncFunction,
-        disable: [Function: bound apiCall] AsyncFunction,
-        enable: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        update: [Function: bound apiCall] AsyncFunction,
-        users: [Object]
-      },
+        create: [Function: bound apiCall
+      ] AsyncFunction,
+        disable: [Function: bound apiCall
+      ] AsyncFunction,
+        enable: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        update: [Function: bound apiCall
+      ] AsyncFunction,
+        users: [Object
+      ]
+    },
       users: {
-        conversations: [Function: bound apiCall] AsyncFunction,
-        deletePhoto: [Function: bound apiCall] AsyncFunction,
-        getPresence: [Function: bound apiCall] AsyncFunction,
-        identity: [Function: bound apiCall] AsyncFunction,
-        info: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        lookupByEmail: [Function: bound apiCall] AsyncFunction,
-        setPhoto: [Function: bound apiCall] AsyncFunction,
-        setPresence: [Function: bound apiCall] AsyncFunction,
-        profile: [Object]
-      },
+        conversations: [Function: bound apiCall
+      ] AsyncFunction,
+        deletePhoto: [Function: bound apiCall
+      ] AsyncFunction,
+        getPresence: [Function: bound apiCall
+      ] AsyncFunction,
+        identity: [Function: bound apiCall
+      ] AsyncFunction,
+        info: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        lookupByEmail: [Function: bound apiCall
+      ] AsyncFunction,
+        setPhoto: [Function: bound apiCall
+      ] AsyncFunction,
+        setPresence: [Function: bound apiCall
+      ] AsyncFunction,
+        profile: [Object
+      ]
+    },
       views: {
-        open: [Function: bound apiCall] AsyncFunction,
-        publish: [Function: bound apiCall] AsyncFunction,
-        push: [Function: bound apiCall] AsyncFunction,
-        update: [Function: bound apiCall] AsyncFunction
-      },
+        open: [Function: bound apiCall
+      ] AsyncFunction,
+        publish: [Function: bound apiCall
+      ] AsyncFunction,
+        push: [Function: bound apiCall
+      ] AsyncFunction,
+        update: [Function: bound apiCall
+      ] AsyncFunction
+    },
       workflows: {
-        stepCompleted: [Function: bound apiCall] AsyncFunction,
-        stepFailed: [Function: bound apiCall] AsyncFunction,
-        updateStep: [Function: bound apiCall] AsyncFunction
-      },
+        stepCompleted: [Function: bound apiCall
+      ] AsyncFunction,
+        stepFailed: [Function: bound apiCall
+      ] AsyncFunction,
+        updateStep: [Function: bound apiCall
+      ] AsyncFunction
+    },
       channels: {
-        archive: [Function: bound apiCall] AsyncFunction,
-        create: [Function: bound apiCall] AsyncFunction,
-        history: [Function: bound apiCall] AsyncFunction,
-        info: [Function: bound apiCall] AsyncFunction,
-        invite: [Function: bound apiCall] AsyncFunction,
-        join: [Function: bound apiCall] AsyncFunction,
-        kick: [Function: bound apiCall] AsyncFunction,
-        leave: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        mark: [Function: bound apiCall] AsyncFunction,
-        rename: [Function: bound apiCall] AsyncFunction,
-        replies: [Function: bound apiCall] AsyncFunction,
-        setPurpose: [Function: bound apiCall] AsyncFunction,
-        setTopic: [Function: bound apiCall] AsyncFunction,
-        unarchive: [Function: bound apiCall] AsyncFunction
-      },
+        archive: [Function: bound apiCall
+      ] AsyncFunction,
+        create: [Function: bound apiCall
+      ] AsyncFunction,
+        history: [Function: bound apiCall
+      ] AsyncFunction,
+        info: [Function: bound apiCall
+      ] AsyncFunction,
+        invite: [Function: bound apiCall
+      ] AsyncFunction,
+        join: [Function: bound apiCall
+      ] AsyncFunction,
+        kick: [Function: bound apiCall
+      ] AsyncFunction,
+        leave: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        mark: [Function: bound apiCall
+      ] AsyncFunction,
+        rename: [Function: bound apiCall
+      ] AsyncFunction,
+        replies: [Function: bound apiCall
+      ] AsyncFunction,
+        setPurpose: [Function: bound apiCall
+      ] AsyncFunction,
+        setTopic: [Function: bound apiCall
+      ] AsyncFunction,
+        unarchive: [Function: bound apiCall
+      ] AsyncFunction
+    },
       groups: {
-        archive: [Function: bound apiCall] AsyncFunction,
-        create: [Function: bound apiCall] AsyncFunction,
-        createChild: [Function: bound apiCall] AsyncFunction,
-        history: [Function: bound apiCall] AsyncFunction,
-        info: [Function: bound apiCall] AsyncFunction,
-        invite: [Function: bound apiCall] AsyncFunction,
-        kick: [Function: bound apiCall] AsyncFunction,
-        leave: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        mark: [Function: bound apiCall] AsyncFunction,
-        open: [Function: bound apiCall] AsyncFunction,
-        rename: [Function: bound apiCall] AsyncFunction,
-        replies: [Function: bound apiCall] AsyncFunction,
-        setPurpose: [Function: bound apiCall] AsyncFunction,
-        setTopic: [Function: bound apiCall] AsyncFunction,
-        unarchive: [Function: bound apiCall] AsyncFunction
-      },
+        archive: [Function: bound apiCall
+      ] AsyncFunction,
+        create: [Function: bound apiCall
+      ] AsyncFunction,
+        createChild: [Function: bound apiCall
+      ] AsyncFunction,
+        history: [Function: bound apiCall
+      ] AsyncFunction,
+        info: [Function: bound apiCall
+      ] AsyncFunction,
+        invite: [Function: bound apiCall
+      ] AsyncFunction,
+        kick: [Function: bound apiCall
+      ] AsyncFunction,
+        leave: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        mark: [Function: bound apiCall
+      ] AsyncFunction,
+        open: [Function: bound apiCall
+      ] AsyncFunction,
+        rename: [Function: bound apiCall
+      ] AsyncFunction,
+        replies: [Function: bound apiCall
+      ] AsyncFunction,
+        setPurpose: [Function: bound apiCall
+      ] AsyncFunction,
+        setTopic: [Function: bound apiCall
+      ] AsyncFunction,
+        unarchive: [Function: bound apiCall
+      ] AsyncFunction
+    },
       im: {
-        close: [Function: bound apiCall] AsyncFunction,
-        history: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        mark: [Function: bound apiCall] AsyncFunction,
-        open: [Function: bound apiCall] AsyncFunction,
-        replies: [Function: bound apiCall] AsyncFunction
-      },
+        close: [Function: bound apiCall
+      ] AsyncFunction,
+        history: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        mark: [Function: bound apiCall
+      ] AsyncFunction,
+        open: [Function: bound apiCall
+      ] AsyncFunction,
+        replies: [Function: bound apiCall
+      ] AsyncFunction
+    },
       mpim: {
-        close: [Function: bound apiCall] AsyncFunction,
-        history: [Function: bound apiCall] AsyncFunction,
-        list: [Function: bound apiCall] AsyncFunction,
-        mark: [Function: bound apiCall] AsyncFunction,
-        open: [Function: bound apiCall] AsyncFunction,
-        replies: [Function: bound apiCall] AsyncFunction
-      },
+        close: [Function: bound apiCall
+      ] AsyncFunction,
+        history: [Function: bound apiCall
+      ] AsyncFunction,
+        list: [Function: bound apiCall
+      ] AsyncFunction,
+        mark: [Function: bound apiCall
+      ] AsyncFunction,
+        open: [Function: bound apiCall
+      ] AsyncFunction,
+        replies: [Function: bound apiCall
+      ] AsyncFunction
+    },
       token: 'xoxb-32948885908-3447548248163-0ZvF4J3cgJxZd50yFPOnqwLW',
-      slackApiUrl: 'https://slack.com/api/',
-      retryConfig: { retries: 10, factor: 1.96821, randomize: true },
+      slackApiUrl: 'https: //slack.com/api/',
+      retryConfig: { retries: 10, factor: 1.96821, randomize: true
+    },
       requestQueue: PQueue {
         _events: Events <Complex prototype> {},
         _eventsCount: 0,
         _intervalCount: 0,
         _intervalEnd: 0,
         _pendingCount: 0,
-        _resolveEmpty: [Function: empty],
-        _resolveIdle: [Function: empty],
+        _resolveEmpty: [Function: empty
+      ],
+        _resolveIdle: [Function: empty
+      ],
         _carryoverConcurrencyCount: false,
         _isIntervalIgnored: true,
         _intervalCap: Infinity,
         _interval: 0,
-        _queue: [PriorityQueue],
-        _queueClass: [class PriorityQueue],
+        _queue: [PriorityQueue
+      ],
+        _queueClass: [class PriorityQueue
+      ],
         _concurrency: 3,
         _intervalId: undefined,
         _timeout: undefined,
         _throwOnTimeout: false,
         _isPaused: false
-      },
+    },
       tlsConfig: {},
       rejectRateLimitedCalls: false,
       teamId: 'T0YTWS1SQ',
-      logger: ConsoleLogger { level: 'info', name: 'bolt-app' },
-      axios: [Function: wrap] {
-        request: [Function: wrap],
-        getUri: [Function: wrap],
-        delete: [Function: wrap],
-        get: [Function: wrap],
-        head: [Function: wrap],
-        options: [Function: wrap],
-        post: [Function: wrap],
-        put: [Function: wrap],
-        patch: [Function: wrap],
-        defaults: [Object],
-        interceptors: [Object],
-        create: [Function: create]
-      }
+      logger: ConsoleLogger { level: 'info', name: 'bolt-app'
     },
-    logger: ConsoleLogger { level: 'info', name: 'bolt-app' }
+      axios: [Function: wrap
+    ] {
+        request: [Function: wrap
+      ],
+        getUri: [Function: wrap
+      ],
+        delete: [Function: wrap
+      ],
+        get: [Function: wrap
+      ],
+        head: [Function: wrap
+      ],
+        options: [Function: wrap
+      ],
+        post: [Function: wrap
+      ],
+        put: [Function: wrap
+      ],
+        patch: [Function: wrap
+      ],
+        defaults: [Object
+      ],
+        interceptors: [Object
+      ],
+        create: [Function: create
+      ]
+    }
+  },
+    logger: ConsoleLogger { level: 'info', name: 'bolt-app'
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
+}
