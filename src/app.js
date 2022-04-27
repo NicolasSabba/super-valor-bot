@@ -39,7 +39,7 @@ app.event("reaction_added", async ({ event }) => {
           to: [dstUser.user.profile.email],
           type: "value",
           from: srcUser.user.profile.email,
-          actions: `${value} (from Easy value)`,
+          actions: `For your interactions in "Slack" (from Easy Values bot)`,
         },
         {
           headers: {
