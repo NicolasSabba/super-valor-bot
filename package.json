@@ -2,7 +2,7 @@
   "name": "super-valor-bot",
   "version": "0.0.1",
   "description": "El mejor bot de api de valores",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/NicolasSabba/super-valor-bot/issues"
   },
-  "homepage": "https://github.com/NicolasSabba/super-valor-bot#readme"
+  "homepage": "https://github.com/NicolasSabba/super-valor-bot#readme",
+  "dependencies": {
+    "@slack/bolt": "^3.11.0",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
 }
