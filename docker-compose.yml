@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  app:
+    build: .
+    command: npm run live
+    ports:
+      - "$PORT:$PORT"
+  redis:
+    image: redis:7.0.0
+    command: redis-server --save 60 1 --loglevel warning
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
